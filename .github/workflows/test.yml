@@ -21,7 +21,7 @@ jobs:
         os: [macos-latest, windows-latest, ubuntu-16.04, ubuntu-18.04]
     steps:
     - name: Checkout
-      uses: actions/checkout@v2
+      uses: actions/checkout@v3
 
     - name: setup default python 
       uses: ./
@@ -42,7 +42,7 @@ jobs:
         python: [3.5.4, 3.6.7, 3.7.5, 3.8.1]
     steps:
     - name: Checkout
-      uses: actions/checkout@v2
+      uses: actions/checkout@v3
 
     - name: setup-python ${{ matrix.python }}
       uses: ./
@@ -71,7 +71,7 @@ jobs:
         os: [macos-latest, windows-latest, ubuntu-16.04, ubuntu-18.04]
     steps:
     - name: Checkout
-      uses: actions/checkout@v2
+      uses: actions/checkout@v3
 
     - name: setup-python 3.9.0-beta.4
       uses: ./
